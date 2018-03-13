@@ -7,7 +7,7 @@
           username: "{{ vcenter_user }}"
           password: "{{ vcenter_pass }}"
           validate_certs: no
-          guest: "srv-ittest-01"
+          guest: "{{ guestos_name }}"
           from_template: yes
           template_src: "centos6.9"
           vm_extra_config:

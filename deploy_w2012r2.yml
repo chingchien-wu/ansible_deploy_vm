@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+       - vsphere_guest:
+          vcenter_hostname: "{{ vcenter_ip }}"
+          username: "{{ vcenter_user }}"
+          password: "{{ vcenter_pass }}"
+          validate_certs: no
+          guest: "{{ guestos_name }}"
+          from_template: yes
+          template_src: "win2012r2"
+          vm_extra_config:
+           folder: Testing
+          esxi:
+           datacenter: "{{ twdc_vc_dcname }}"
+           hostname: "{{ esxi_ip }}"
