@@ -15,3 +15,7 @@ ansible-playbook deploy_centos.yml
 ```
 ansible-playbook deploy_ubuntu.yml 
 ```
+
+```
+ansible-playbook deploy_win2012r2.yml 
+```
