@@ -1,0 +1,5 @@
+vcenter_ip: 10.22.18.101
+esxi_ip: 10.22.18.100
+vcenter_user: administrator
+vcenter_pass: 2wsx#EDC
+twdc_vc_dcname: TWDC_IT_Datacenter
